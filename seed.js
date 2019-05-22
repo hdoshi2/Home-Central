@@ -28,25 +28,25 @@ const seedBuilding = [
   {
     buildingName: "Hoyt Street Buiding",
     address: "11 Hoyt Street, Brooklyn, NY 11201",
-    imageUrl: "",
+    imageUrl: "https://cdn-img2.streeteasy.com/nyc/image/66/337427966.jpg",
     landlordId: 1
   },
   {
     buildingName: "388 Bridge Street Buiding",
     address: "388 Bridge Street, Brooklyn, NY 11201",
-    imageUrl: "",
+    imageUrl: "https://cdn-img3.streeteasy.com/nyc/image/99/69353999.jpg",
     landlordId: 2
   },
   {
     buildingName: "City Point",
     address: "88 Willogbuoy Street, Brooklyn, NY 11201",
-    imageUrl: "",
+    imageUrl: "https://cdn-img2.streeteasy.com/nyc/image/22/307048122.jpg",
     landlordId: 3
   },
   {
     buildingName: "Urby Harrison",
     address: "777 South 3rd Street, Harrison, NJ 07029",
-    imageUrl: "",
+    imageUrl: "https://cdn-img3.streeteasy.com/nyc/image/15/283673015.jpg",
     landlordId: 1
   }
 ];

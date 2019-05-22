@@ -4,7 +4,7 @@ const router = require("express").Router();
 
 router.use("/building", require("./building.route"));
 router.use("/apartment", require("./apartment.route"));
-router.use("/landlord", require("./landlord.route"));
+// router.use("/landlord", require("./landlord.route"));
 
 router.use((req, res, next) => {
   const err = new Error("API route not found!");

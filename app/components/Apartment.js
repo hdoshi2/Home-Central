@@ -1,14 +1,24 @@
 import React from "react";
 import { connect } from "react-redux";
 
-export const Students = props => {
+export const Apartment = props => {
   const { apartmentList } = props;
-  console.log("props", props);
+  // console.log("apartmentList", apartmentList);
   return (
     <div className="flexContainer flexColumn fullHeight whiteBackground">
       <div className="flexContainer flexItem">
         <main className="flexItem whiteBackground main">
-          <p>Put Content Here</p>
+          <div className="itemstest">
+            {apartmentList.map(apartment => (
+              <div key={apartment.id} className="item">
+                <p>Building: {apartment.building.buildingName}</p>
+                <p>Unit: {apartment.unit}</p>
+                <p>Bedrooms: {apartment.bedrooms}</p>
+                <p>Bathrooms: {apartment.bathrooms}</p>
+                <p>Square Footage: {apartment.squareFootage} sf</p>
+              </div>
+            ))}
+          </div>
         </main>
         <aside className="sidebar sidebarLeft">
           <h2>Left Sidebar</h2>
@@ -19,9 +29,6 @@ export const Students = props => {
           <p>Put your content here</p>
         </aside>
       </div>
-      <footer className="flexContainer flexCenter blueBackground whiteText height50">
-        &copy; H+P
-      </footer>
     </div>
   );
 };
@@ -29,8 +36,8 @@ export const Students = props => {
 const mapStatetoProps = state => {
   console.log("state", state);
   return {
-    studentsList: state.apartmentReducer
+    apartmentList: state.apartmentReducer
   };
 };
 
-export default connect(mapStatetoProps)(Students);
+export default connect(mapStatetoProps)(Apartment);

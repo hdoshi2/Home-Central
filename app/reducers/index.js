@@ -3,13 +3,21 @@
 
 // import {combineReducers} from 'redux'
 
-const initialState = {}
+// const initialState = {}
 
-const rootReducer = (state = initialState, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
-}
+// const rootReducer = (state = initialState, action) => {
+//   switch (action.type) {
+//     default:
+//       return state
+//   }
+// }
 
-export default rootReducer
+// export default rootReducer
+
+import { combineReducers } from "redux";
+import { apartmentReducer } from "./apartment";
+import { buildingReducer } from "./building";
+
+const rootReducer = combineReducers({ apartmentReducer, buildingReducer });
+
+export default rootReducer;
